@@ -1,0 +1,875 @@
+<!doctype html>
+    <head>
+        <!-- Plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="myDiv">
+        </div>
+        <script>
+
+            Plotly.d3.csv('data.csv', function (err, rows) {
+            function unpack(rows, key) {
+            return rows.map(function(row) { return row[key]; });
+        }
+
+                    var trace1 = {
+                        x: unpack(rows, 'xj1'),
+                        y: unpack(rows, 'yj1'),
+                        z: unpack(rows, 'zj1'),
+
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                        name: 'jumping'
+                    };
+
+                     var trace2 = {
+                        x: unpack(rows, 'xj2'),
+                        y: unpack(rows, 'yj2'),
+                        z: unpack(rows, 'zj2'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace3 = {
+                        x: unpack(rows, 'xj3'),
+                        y: unpack(rows, 'yj3'),
+                        z: unpack(rows, 'zj3'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace4 = {
+                        x: unpack(rows, 'xj4'),
+                        y: unpack(rows, 'yj4'),
+                        z: unpack(rows, 'zj4'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace5 = {
+                        x: unpack(rows, 'xj5'),
+                        y: unpack(rows, 'yj5'),
+                        z: unpack(rows, 'zj5'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace6 = {
+                        x: unpack(rows, 'xj6'),
+                        y: unpack(rows, 'yj6'),
+                        z: unpack(rows, 'zj6'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace7 = {
+                        x: unpack(rows, 'xj7'),
+                        y: unpack(rows, 'yj7'),
+                        z: unpack(rows, 'zj7'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace8 = {
+                        x: unpack(rows, 'xj8'),
+                        y: unpack(rows, 'yj8'),
+                        z: unpack(rows, 'zj8'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace9 = {
+                        x: unpack(rows, 'xj9'),
+                        y: unpack(rows, 'yj9'),
+                        z: unpack(rows, 'zj9'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace10 = {
+                        x: unpack(rows, 'xj10'),
+                        y: unpack(rows, 'yj10'),
+                        z: unpack(rows, 'zj10'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace11 = {
+                        x: unpack(rows, 'xj11'),
+                        y: unpack(rows, 'yj11'),
+                        z: unpack(rows, 'zj11'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace12 = {
+                        x: unpack(rows, 'xj12'),
+                        y: unpack(rows, 'yj12'),
+                        z: unpack(rows, 'zj12'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace13 = {
+                        x: unpack(rows, 'xj13'),
+                        y: unpack(rows, 'yj13'),
+                        z: unpack(rows, 'zj13'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace14 = {
+                        x: unpack(rows, 'xj14'),
+                        y: unpack(rows, 'yj14'),
+                        z: unpack(rows, 'zj14'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace15 = {
+                        x: unpack(rows, 'xj15'),
+                        y: unpack(rows, 'yj15'),
+                        z: unpack(rows, 'zj15'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace16 = {
+                        x: unpack(rows, 'xj16'),
+                        y: unpack(rows, 'yj16'),
+                        z: unpack(rows, 'zj16'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace17 = {
+                        x: unpack(rows, 'xj17'),
+                        y: unpack(rows, 'yj17'),
+                        z: unpack(rows, 'zj17'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace18 = {
+                        x: unpack(rows, 'xj18'),
+                        y: unpack(rows, 'yj18'),
+                        z: unpack(rows, 'zj18'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace19 = {
+                        x: unpack(rows, 'xj19'),
+                        y: unpack(rows, 'yj19'),
+                        z: unpack(rows, 'zj19'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                      var trace20 = {
+                        x: unpack(rows, 'xj20'),
+                        y: unpack(rows, 'yj20'),
+                        z: unpack(rows, 'zj20'),
+                        legendgroup: 'jump',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#330b5b',
+                            },
+                        type: 'scatter3d',
+                         showlegend: false
+
+                    };
+
+                     var trace21 = {
+                        x: unpack(rows, 'xw1'),
+                        y: unpack(rows, 'yw1'),
+                        z: unpack(rows, 'zw1'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                         name:'walking'
+
+                    };
+
+                        var trace22 = {
+                        x: unpack(rows, 'xw2'),
+                        y: unpack(rows, 'yw2'),
+                        z: unpack(rows, 'zw2'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace23 = {
+                        x: unpack(rows, 'xw3'),
+                        y: unpack(rows, 'yw3'),
+                        z: unpack(rows, 'zw3'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace24 = {
+                        x: unpack(rows, 'xw4'),
+                        y: unpack(rows, 'yw4'),
+                        z: unpack(rows, 'zw4'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace25 = {
+                        x: unpack(rows, 'xw5'),
+                        y: unpack(rows, 'yw5'),
+                        z: unpack(rows, 'zw5'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace26 = {
+                        x: unpack(rows, 'xw6'),
+                        y: unpack(rows, 'yw6'),
+                        z: unpack(rows, 'zw6'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace27 = {
+                        x: unpack(rows, 'xw7'),
+                        y: unpack(rows, 'yw7'),
+                        z: unpack(rows, 'zw7'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace28 = {
+                        x: unpack(rows, 'xw8'),
+                        y: unpack(rows, 'yw8'),
+                        z: unpack(rows, 'zw8'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace29 = {
+                        x: unpack(rows, 'xw9'),
+                        y: unpack(rows, 'yw9'),
+                        z: unpack(rows, 'zw9'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace30 = {
+                        x: unpack(rows, 'xw10'),
+                        y: unpack(rows, 'yw10'),
+                        z: unpack(rows, 'zw10'),
+                        legendgroup: 'walk',
+                        mode:'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace31 = {
+                        x: unpack(rows, 'xw11'),
+                        y: unpack(rows, 'yj11'),
+                        z: unpack(rows, 'zj11'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace32 = {
+                        x: unpack(rows, 'xw12'),
+                        y: unpack(rows, 'yw12'),
+                        z: unpack(rows, 'zw12'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace33 = {
+                        x: unpack(rows, 'xw13'),
+                        y: unpack(rows, 'yw13'),
+                        z: unpack(rows, 'zw13'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace34 = {
+                        x: unpack(rows, 'xw14'),
+                        y: unpack(rows, 'yw14'),
+                        z: unpack(rows, 'zw14'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace35 = {
+                        x: unpack(rows, 'xw15'),
+                        y: unpack(rows, 'yw15'),
+                        z: unpack(rows, 'zw15'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace36 = {
+                        x: unpack(rows, 'xw16'),
+                        y: unpack(rows, 'yw16'),
+                        z: unpack(rows, 'zw16'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace37 = {
+                        x: unpack(rows, 'xw17'),
+                        y: unpack(rows, 'yw17'),
+                        z: unpack(rows, 'zw17'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace38 = {
+                        x: unpack(rows, 'xw18'),
+                        y: unpack(rows, 'yw18'),
+                        z: unpack(rows, 'zw18'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace39 = {
+                        x: unpack(rows, 'xw19'),
+                        y: unpack(rows, 'yw19'),
+                        z: unpack(rows, 'zw19'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                     var trace40 = {
+                        x: unpack(rows, 'xw20'),
+                        y: unpack(rows, 'yj20'),
+                        z: unpack(rows, 'zj20'),
+                        legendgroup: 'walk',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF69B4',
+                            },
+                        type: 'scatter3d',
+                        showlegend: false
+
+                    };
+
+                    var trace41 = {
+                        x: unpack(rows, 'xr1'),
+                        y: unpack(rows, 'yr1'),
+                        z: unpack(rows, 'zr1'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       name: 'running'
+
+                    };
+
+                    var trace42 = {
+                        x: unpack(rows, 'xr2'),
+                        y: unpack(rows, 'yr2'),
+                        z: unpack(rows, 'zr2'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace43 = {
+                        x: unpack(rows, 'xr3'),
+                        y: unpack(rows, 'yr3'),
+                        z: unpack(rows, 'zr3'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace44 = {
+                        x: unpack(rows, 'xr4'),
+                        y: unpack(rows, 'yr4'),
+                        z: unpack(rows, 'zr4'),
+                        legendgroup: 'run',
+                        mode:'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace45 = {
+                        x: unpack(rows, 'xr5'),
+                        y: unpack(rows, 'yr5'),
+                        z: unpack(rows, 'zr5'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace46 = {
+                        x: unpack(rows, 'xr6'),
+                        y: unpack(rows, 'yr6'),
+                        z: unpack(rows, 'zr6'),
+                        legendgroup: 'run',
+                        mode:'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace47 = {
+                        x: unpack(rows, 'xr7'),
+                        y: unpack(rows, 'yr7'),
+                        z: unpack(rows, 'zr7'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace48 = {
+                        x: unpack(rows, 'xr8'),
+                        y: unpack(rows, 'yr8'),
+                        z: unpack(rows, 'zr8'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace49 = {
+                        x: unpack(rows, 'xr9'),
+                        y: unpack(rows, 'yr9'),
+                        z: unpack(rows, 'zr9'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace50 = {
+                        x: unpack(rows, 'xr10'),
+                        y: unpack(rows, 'yr10'),
+                        z: unpack(rows, 'zr10'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace51 = {
+                        x: unpack(rows, 'xr11'),
+                        y: unpack(rows, 'yr11'),
+                        z: unpack(rows, 'zr11'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace52 = {
+                        x: unpack(rows, 'xr12'),
+                        y: unpack(rows, 'yr12'),
+                        z: unpack(rows, 'zr12'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace53 = {
+                        x: unpack(rows, 'xr13'),
+                        y: unpack(rows, 'yr13'),
+                        z: unpack(rows, 'zr13'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace54 = {
+                        x: unpack(rows, 'xr14'),
+                        y: unpack(rows, 'yr14'),
+                        z: unpack(rows, 'zr14'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace55 = {
+                        x: unpack(rows, 'xr15'),
+                        y: unpack(rows, 'yr15'),
+                        z: unpack(rows, 'zr15'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace56 = {
+                        x: unpack(rows, 'xr16'),
+                        y: unpack(rows, 'yr16'),
+                        z: unpack(rows, 'zr16'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace57 = {
+                        x: unpack(rows, 'xr17'),
+                        y: unpack(rows, 'yr17'),
+                        z: unpack(rows, 'zr17'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace58 = {
+                        x: unpack(rows, 'xr18'),
+                        y: unpack(rows, 'yr18'),
+                        z: unpack(rows, 'zr18'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace59 = {
+                        x: unpack(rows, 'xr19'),
+                        y: unpack(rows, 'yr19'),
+                        z: unpack(rows, 'zr19'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                    var trace60 = {
+                        x: unpack(rows, 'xr20'),
+                        y: unpack(rows, 'yr20'),
+                        z: unpack(rows, 'zr20'),
+                        legendgroup: 'run',
+                        mode: 'markers+lines',
+                        marker: {
+                            color: '#FF0000',
+                            },
+                        type: 'scatter3d',
+                       showlegend: false
+
+                    };
+
+                      var data = [trace1, trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12,trace13,trace14,trace15,trace16,trace17,trace18,trace19,trace20,
+                      trace21, trace22,trace23,trace24,trace25,trace26,trace27,trace28,trace29,trace30,trace31,trace32,trace33,trace34,trace35,trace36,trace37,trace38,trace39,trace40,
+                       trace41, trace42,trace43,trace44,trace45,trace46,trace47,trace48,trace49,trace50,trace51,trace52,trace53,trace54,trace55,trace56,trace57,trace58,trace59,trace60];
+                var layout = {
+                    title: 'Plot',
+                    autosize: true,
+                    width: 750,
+                    height: 750,
+                    margin: {
+                        l: 0,
+                        r: 0,
+                        b: 0,
+                        t: 65
+                    }
+                };
+                    Plotly.newPlot('myDiv', data, layout);
+ });
+        </script>
+    </body>
+</html>
